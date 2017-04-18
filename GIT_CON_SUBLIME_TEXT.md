@@ -7,7 +7,7 @@ Pasos:
 3. Para ejecutar comandos de git, pulsamos Ctrl+Shift+P y escribimos los comandos git deseados. Ejemplos:
   * git log 
   * git status
-  * git add ...
+  * git add all
   * git commit ...
   * git push 
   * git gitk    (necesario tener instalada aplicación gitk)
