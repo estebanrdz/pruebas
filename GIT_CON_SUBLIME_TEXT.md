@@ -3,11 +3,12 @@
 ## Pasos:
 ### 1. Instalar *Sublime Text 3*.
 ### 2. Instalar *Package Control* para Sublime. 
-> Las instrucciones están en https://packagecontrol.io/installation
+- Las instrucciones están en https://packagecontrol.io/installation
 ### 3. Instalar utilidad *Git*
-> En Debian/Ubuntu hacemos: `apt-get install git`.
-> En Windows, consulta a San Google.
-### 4. En Sublime Text, vamos a `Preferences --> Package Control --> Package Control: install package --> Git`
+- En Debian/Ubuntu hacemos: `apt-get install git`.
+- En Windows, consulta a San Google.
+### 4. En Sublime Text
+- `Preferences --> Package Control --> Package Control: install package --> Git`
 ### 5. Para ejecutar comandos de git, pulsamos **Ctrl+Shift+P** y escribimos los comandos git deseados. Ejemplos:
 ```
 git log 
