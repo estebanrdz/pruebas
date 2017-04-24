@@ -3,27 +3,27 @@
 >NOTA: El modo -v es modo _verbose_ o detallado.
 >Es aconsejable su uso puesto que muestra los detalles.
 
-## Repositorios remotos
+## Listado de Repositorios remotos
 Para mostrar repositorios remotos asociados a repositorio local.
 ```
 git remote -v
 ```
 
-## Ramas
+## Listado de Ramas
 Para ver todas las ramas, tanto locales como remotas.
 ```
 git branch -av
 ```
 
-## Listado de commits
+## Listado de Commits
 **Todos los commits**
 
-En modo detallado:
+Modo detallado:
 ```
 git log --graph 
 ```
 
-En modo simplificado:
+Modo simplificado:
 ```
 git log --graph --oneline
 ```
@@ -48,7 +48,7 @@ git checkout _nombre-rama_
 ```
 
 
-## Listado de etiquetas
+## Listado de Etiquetas
 **Todas las etiquetas.**
 
 Modo detallado (4 líneas):
