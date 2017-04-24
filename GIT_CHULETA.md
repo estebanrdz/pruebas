@@ -16,11 +16,13 @@ git branch -av
 ```
 
 ## Listado de commits
-Todos los commits.
-En modo más detallado:
+**Todos los commits**
+
+En modo detallado:
 ```
 git log --graph 
 ```
+
 En modo simplificado:
 ```
 git log --graph --oneline
@@ -40,5 +42,20 @@ Para cambiar de un commit a otro dentro de la misma rama.
 git checkout _hash_ 
 ```
 
+Para volver al HEAD de la rama
+```
+git checkout _nombre-rama_ 
+```
 
 
+## Listado de etiquetas
+**Todas las etiquetas.**
+
+Modo detallado (4 líneas):
+```
+git tag -n4 
+```
+Modo simplificado:
+```
+git tag 
+```
