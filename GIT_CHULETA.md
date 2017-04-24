@@ -1,7 +1,9 @@
 # CHULETA DE GIT
 
 >NOTA: El modo -v es modo _verbose_ o detallado.
+>
 >Es aconsejable su uso puesto que muestra los detalles.
+
 
 ## Listado de Repositorios remotos
 Para mostrar repositorios remotos asociados a repositorio local.
@@ -9,11 +11,15 @@ Para mostrar repositorios remotos asociados a repositorio local.
 git remote -v
 ```
 
+
+
 ## Listado de Ramas
 Para ver todas las ramas, tanto locales como remotas.
 ```
 git branch -av
 ```
+
+
 
 ## Listado de Commits
 **Todos los commits**
@@ -59,3 +65,8 @@ Modo simplificado:
 ```
 git tag 
 ```
+
+
+## Recursos
+* http://cheat.errtheblog.com/s/git
+* http://es.gitready.com/
