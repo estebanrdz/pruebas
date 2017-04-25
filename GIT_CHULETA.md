@@ -84,5 +84,4 @@ git tag
 ## Recursos
 * http://cheat.errtheblog.com/s/git
 * http://es.gitready.com/
-* http://gitready.com    
-> en inglés existe mayor contenido, también en alemán pero no es plan de ponerse a leerlo en este idioma.
+* http://gitready.com  En inglés existe mayor contenido. También en alemán, pero no es plan.
