@@ -5,6 +5,14 @@
 >Es aconsejable su uso puesto que muestra los detalles.
 
 
+## Configuración mínima
+```
+git config --global user.email "jamj2000@gmail.com"
+git config --global user.name "José Antonio Muñoz Jiménez"
+git config --global push.default simple
+```
+
+
 ## Listado de Repositorios remotos
 Para mostrar repositorios remotos asociados a repositorio local.
 ```
@@ -70,3 +78,4 @@ git tag
 ## Recursos
 * http://cheat.errtheblog.com/s/git
 * http://es.gitready.com/
+* http://gitready.com    (en inglés existe mayor contenido, también en alemán pero no es plan de ponerse a leerlo en este idioma)
