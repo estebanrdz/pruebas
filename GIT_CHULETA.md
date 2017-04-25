@@ -7,9 +7,15 @@
 
 ## Configuración mínima
 ```
-git config --global user.email "jamj2000@gmail.com"
-git config --global user.name "José Antonio Muñoz Jiménez"
-git config --global push.default simple
+git config --global user.email    "jamj2000@gmail.com"
+git config --global user.name     "José Antonio Muñoz Jiménez"
+git config --global push.default  simple
+```
+
+
+## Clonado de un repositorio
+```
+git clone git@github.com:jamj2000/pruebas.git 
 ```
 
 
@@ -78,4 +84,5 @@ git tag
 ## Recursos
 * http://cheat.errtheblog.com/s/git
 * http://es.gitready.com/
-* http://gitready.com    (en inglés existe mayor contenido, también en alemán pero no es plan de ponerse a leerlo en este idioma)
+* http://gitready.com    
+> en inglés existe mayor contenido, también en alemán pero no es plan de ponerse a leerlo en este idioma.
