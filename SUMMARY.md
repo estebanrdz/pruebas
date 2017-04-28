@@ -1,5 +1,7 @@
 # Contenido
 
+![GITKRAKEN](gitkraken.png)
+
 [GIT CHULETA](GIT_CHULETA.md)
 
 [GIT CLIENTES GRÁFICOS](GIT_CLIENTES_GRÁFICOS.md)
