@@ -1,3 +1,4 @@
-# pruebas
+# Pruebas
 
-Repositorio para realizar distintos tipos de pruebas para GIT.
+Repositorio para realizar pruebas con GIT.
+
