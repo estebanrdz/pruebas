@@ -1,10 +1,8 @@
-# Contenido
+# Contenido adad
 
 [GIT CHULETA](GIT_CHULETA.md)
 
 [GIT CLIENTES GRÁFICOS](GIT_CLIENTES_GRÁFICOS.md)
 
 [GIT SUBLIME TEXT](GIT_SUBLIME_TEXT.md)
-
-
 
