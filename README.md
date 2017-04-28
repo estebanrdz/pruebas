@@ -1,6 +1,8 @@
 # Pruebas
+Repositorio para realizar pruebas con GIT, Javascript, ...
 
-![](git-github.png)
+![](git-github.png) 
+![](js.png)
 
-Repositorio para realizar pruebas con GIT.
+
 
