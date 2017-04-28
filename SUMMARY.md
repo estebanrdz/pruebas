@@ -1,4 +1,4 @@
-# Contenido adad
+# Contenido
 
 [GIT CHULETA](GIT_CHULETA.md)
 
