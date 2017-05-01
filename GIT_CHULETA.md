@@ -72,6 +72,12 @@ Para volver al HEAD de la rama
 git checkout _nombre-rama_
 ```
 
+## Deshacer cambios realizados antes del commit
+
+```
+git checkout -- .
+```
+
 ## Listado de Etiquetas
 
 **Todas las etiquetas.**
@@ -90,7 +96,7 @@ git tag
 
 ## Recursos
 
-* http://rogerdudler.github.io/git-guide/index.es.html
+* [http://rogerdudler.github.io/git-guide/index.es.html](http://rogerdudler.github.io/git-guide/index.es.html)
 * [http://cheat.errtheblog.com/s/git](http://cheat.errtheblog.com/s/git)
 * [http://es.gitready.com/](http://es.gitready.com/)
 * [http://gitready.com](http://gitready.com)  En inglés existe mayor contenido. También en alemán, pero no es plan.
