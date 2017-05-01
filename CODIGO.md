@@ -1,6 +1,6 @@
 # Resaltado de código
 
-```
+```sql
 CREATE OR REPLACE
 TRIGGER Subida_salario
 AFTER UPDATE OF SALAR ON EMPLEADOS
