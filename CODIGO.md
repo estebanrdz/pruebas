@@ -16,3 +16,5 @@ BEGIN
   END IF;
 END Subida_salario;
 ```
+
+[codigo.sql](codigo.sql)
