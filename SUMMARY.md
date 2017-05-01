@@ -8,6 +8,7 @@
 * [JAVASCRIPT](JAVASCRIPT.md)
 * [CODIGO](CODIGO.md)
 * [MARKDOWN CHULETA](MARKDOWN_CHULETA.md)
+* [codigo.sql](codigo.sql)
 
 
 
