@@ -10,5 +10,7 @@
 
 [JAVASCRIPT](JAVASCRIPT.md)
 
-[NGINX](NGINX.md)
+HTTP/2 [NGINX](NGINX.md)
+
+
 
