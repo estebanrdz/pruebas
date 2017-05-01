@@ -1,0 +1,6 @@
+# CÓDIGO en ASCIIDOC
+
+[source,sql]
+----
+include::codigo.sql[]
+----
