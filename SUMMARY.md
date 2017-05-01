@@ -1,5 +1,7 @@
 # Summary
 
+![](git-github.png)
+
 * [Introduction](README.md)
 * [GIT CHULETA](GIT_CHULETA.md)
 * [GIT\_CLIENTES\_GRÁFICOS](GIT_CLIENTES_GRÁFICOS.md)
