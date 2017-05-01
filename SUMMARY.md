@@ -1,7 +1,5 @@
 # Summary
 
-![](git-github.png)
-
 * [Introduction](README.md)
 * [GIT CHULETA](GIT_CHULETA.md)
 * [GIT\_CLIENTES\_GRÁFICOS](GIT_CLIENTES_GRÁFICOS.md)
@@ -11,7 +9,7 @@
 * [CODIGO](CODIGO.md)
 * [MARKDOWN CHULETA](MARKDOWN_CHULETA.md)
 * [codigo.sql](codigo.sql)
-* OTRO JAVASCRIPT
+* [JAVASCRIPT](JAVASCRIPT.md)2
 
 
 
