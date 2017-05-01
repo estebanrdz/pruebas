@@ -5,7 +5,7 @@ Nueva forma de implementar AJAX.
 - https://jakearchibald.com/2015/thats-so-fetch/
 
 Ejemplo de código JSON:
-```json
+```javascript
 {
     "variables": {
         "myVariable": "Hello World"   
