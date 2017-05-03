@@ -78,6 +78,19 @@ git checkout _nombre-rama_
 git checkout -- .
 ```
 
+## Crear rama y saltar a ella
+
+```
+git branch -b _nombre-rama_
+```
+
+## Borrar una rama en local y en remoto
+
+```
+git branch -d _nombre-rama_
+git push origin --delete _nombre-rama_
+```
+
 ## Listado de Etiquetas
 
 **Todas las etiquetas.**
