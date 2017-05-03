@@ -90,10 +90,15 @@ git checkout -b _nombre-rama_
 git push --set-upstream origin _nueva-rama_
 ```
 
-## Borrar una rama en local y en remoto
+## Borrar rama local
 
 ```
 git branch -d _nombre-rama_
+```
+
+## Borrar rama remota
+
+```
 git push origin --delete _nombre-rama_
 ```
 
