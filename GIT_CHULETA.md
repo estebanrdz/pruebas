@@ -78,10 +78,16 @@ git checkout _nombre-rama_
 git checkout -- .
 ```
 
-## Crear rama y saltar a ella
+## Crear rama local y saltar a ella
 
 ```
-git branch -b _nombre-rama_
+git checkout -b _nombre-rama_
+```
+
+## Crear rama remota y subir cambios de rama local
+
+```
+git push --set-upstream origin _nueva-rama_
 ```
 
 ## Borrar una rama en local y en remoto
