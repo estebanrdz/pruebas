@@ -7,6 +7,7 @@
     "pluginsConfig": {
         "include-codeblock": {
             "template": "acefull", // or ace 
+            "unindent": true
         }
     }
 }
