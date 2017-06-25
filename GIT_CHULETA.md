@@ -26,6 +26,14 @@ Para mostrar repositorios remotos asociados a repositorio local.
 git remote -v
 ```
 
+## Actualización de submódulos
+
+Para actualizar submódulos de terceros.
+
+```
+git submodule update --init --recursive
+```
+
 ## Listado de Ramas
 
 Para ver todas las ramas, tanto locales como remotas.
