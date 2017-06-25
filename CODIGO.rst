@@ -4,8 +4,8 @@ Código incrustado
 Código PL/SQL
 -------------
 
-.. literalinclude:: codigo.sql
-   :language: sql
+.. literalinclude:: codigo
+   :language: plpgsql
    :emphasize-lines: 1,2-10
    :linenos:
 
