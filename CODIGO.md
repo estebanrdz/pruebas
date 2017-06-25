@@ -17,6 +17,7 @@ BEGIN
 END Subida_salario;
 ```
 
+[import](codigo.js)
 [codigo.sql](codigo.sql)
 
 
