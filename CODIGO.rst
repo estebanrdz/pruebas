@@ -10,7 +10,7 @@ Código PL/SQL
    :linenos:
 
 
-.. code-block:: sql
+.. code-block:: plpgsql
 
    CREATE OR REPLACE
    TRIGGER Subida_salario
