@@ -1,8 +1,7 @@
 # Resaltado de código
 
-[import](codigo.sql)
+[import:1-10 title="codigo SQL"](codigo.sql)
 
-[codigo.sql](codigo.sql)
 
 
 
