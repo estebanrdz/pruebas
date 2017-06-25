@@ -6,8 +6,9 @@
     ],
     "pluginsConfig": {
         "include-codeblock": {
-            "template": "acefull", // or ace 
-            "unindent": true
+            "template": "ace", // or acefull 
+            "unindent": true,
+            "theme": "monokai"
         }
     }
 }
