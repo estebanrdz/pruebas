@@ -1,11 +1,12 @@
 {
     "gitbook": "3.x.x",
     "plugins" : [
-        "include-codeblock"
+        "include-codeblock",
+        "ace"
     ],
     "pluginsConfig": {
         "include-codeblock": {
-           "template":"full",
+           "template":"acefull",
            "unindent": true
         }
     }
