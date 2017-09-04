@@ -7,6 +7,7 @@
 [import:1-, title:"codigo Javascript", lang:"javascript"](codigo.js)
 
 
+[import:1-, title:"Snippet codigo Javascript", lang:"javascript"](app.js)
 
 
 
