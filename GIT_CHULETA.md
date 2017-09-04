@@ -27,6 +27,14 @@ Para mostrar repositorios remotos asociados a repositorio local.
 git remote -v
 ```
 
+## Actualización de submódulos
+
+Para actualizar submódulos de terceros.
+
+```
+git submodule update --init --recursive
+```
+
 ## Listado de Ramas
 
 Para ver todas las ramas, tanto locales como remotas.
@@ -79,16 +87,27 @@ git checkout _nombre-rama_
 git checkout -- .
 ```
 
-## Crear rama y saltar a ella
+## Crear rama local y saltar a ella
 
 ```
-git branch -b _nombre-rama_
+git checkout -b _nombre-rama_
 ```
 
-## Borrar una rama en local y en remoto
+## Crear rama remota y subir cambios de rama local
+
+```
+git push --set-upstream origin _nueva-rama_
+```
+
+## Borrar rama local
 
 ```
 git branch -d _nombre-rama_
+```
+
+## Borrar rama remota
+
+```
 git push origin --delete _nombre-rama_
 ```
 
