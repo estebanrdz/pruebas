@@ -10,6 +10,7 @@
 ## Pasos para crear un registro local, incorporar imágenes y crear contenedores a partir de ellas
 
 ### Descargamos contenedor de registro (registry:2)
+
 ```
 docker run -d -p 5000:5000 -v /home/jose/registro/:/var/lib/registry --restart always --name registry registry:2
 ```
@@ -20,7 +21,6 @@ docker run -d -p 5000:5000 -v /home/jose/registro/:/var/lib/registry --restart a
 docker pull hello-world
 docker tag hello-world ip:5000/hola
 docker push ip:5000/hola
-
 ```
 
 ### Borramos caché
@@ -28,12 +28,17 @@ docker push ip:5000/hola
 ```
 docker rmi hello-world
 docker rmi ip:5000/hola  # don't worry, no se borrará la imagen que posee el registro registry
-
 ```
 
 ### Usamos la imagen hola de nuestro registro
 
 ```
 docker run ip:5000/hola
-
 ```
+
+### Reconfiguración del registro
+```
+docker stop registry
+docker rm -v registry
+docker run -d -p 192.168.1.129:5000:5000 -v /home/jose/registro/:/var/lib/registry --restart always --name registry registry:2
+``` 
