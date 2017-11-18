@@ -29,7 +29,7 @@ mkdir  ~/registro
 ### Descargamos contenedor de registro (registry:2)
 
 ```
-docker run -d -p 172.20.7.0:5000:5000 \
+docker run -d -p 5000:5000 \
               -v /home/`id -un`/registro/:/var/lib/registry \
               --restart always \ 
               --name registry \
@@ -40,15 +40,15 @@ docker run -d -p 172.20.7.0:5000:5000 \
 
 ```
 docker pull hello-world
-docker tag hello-world ip:5000/hola
-docker push ip:5000/hola
+docker tag hello-world localhost:5000/hola
+docker push localhost:5000/hola
 ```
 
 ### (Opcional) Borramos caché
 
 ```
 docker rmi hello-world
-docker rmi ip:5000/hola  # don't worry, no se borrará la imagen que posee el registro registry
+docker rmi localhost:5000/hola  # don't worry, no se borrará la imagen que posee el registro registry
 ```
 
 ### (Opcional) Si necesitamos parar el registro
@@ -72,6 +72,8 @@ Añadir la siguiente línea:
 { "insecure-registries":["172.20.7.0:5000"] }
 ```
 
+> Colocar en lugar de `172.20.7.0` la dirección IP del servidor de registro
+
 ### Reiniciamos daemon
 
 ```
@@ -81,5 +83,5 @@ sudo  systemctl  restart  docker
 ### Usamos la imagen hola del registro privado
 
 ```
-docker run ip:5000/hola
+docker  run  172.20.7.0:5000/hola
 ```
