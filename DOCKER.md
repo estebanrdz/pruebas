@@ -27,7 +27,7 @@ docker push ip:5000/hola
 
 ```
 docker rmi hello-world
-docker rmi ip:5000/hola  # don't worry, no se borrará la imagen del contenedor registry
+docker rmi ip:5000/hola  # don't worry, no se borrará la imagen que posee el registro registry
 
 ```
 
