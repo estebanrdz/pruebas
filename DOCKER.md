@@ -7,6 +7,11 @@
 - [Construir un entorno de integración continua con TravisCI](https://medium.com/google-developers/how-to-run-travisci-locally-on-docker-822fc6b2db2e)
 - [Construir un entorno de integración continua con Jenkins y SonarQube](https://yeiei.net/es/como-construir-un-entorno-de-integracion-continua-con-jenkins-y-docker/)
 
+
+# COMO CREAR UN REGISTRO PRIVADO
+
+Un registro es un servidor donde se almacenan imágenes de docker. Un registro privado puede montarse en una red local para ahorrar ancho de banda en las descargas desde Internet.
+
 ## Instalar docker en Ubuntu
 ```
 sudo  apt  install  docker.io
@@ -63,6 +68,8 @@ docker rm -v registry
 __Pasos para descargar imágenes__
 
 
+En los equipos cliente debemos tener instalado también el paquete `docker.io`, así como configurar el demonio para que permita la conexión a sitios "inseguros" (sin HTTPS).
+
 ### Permitimos registros inseguros
 ```
 nano /etc/docker/daemon.json
@@ -86,3 +93,4 @@ sudo  systemctl  restart  docker
 ```
 docker  run  172.20.7.0:5000/hola
 ```
+> Colocar en lugar de `172.20.7.0` la dirección IP del servidor de registro
