@@ -6,13 +6,30 @@
 - [Ejecutar travis-cli en Docker](https://500.keboola.com/run-any-binary-in-a-container-like-it-exists-on-your-computer-8f6205b8cd16)
 - [Ejecutar TravisCI en Docker sin hacer uso de la web travis-ci.org](https://medium.com/google-developers/how-to-run-travisci-locally-on-docker-822fc6b2db2e)
 
+## Instalar docker en Ubuntu
+```
+sudo  apt  install  docker.io
+```
 
-## Pasos para crear un registro local, incorporar imágenes y crear contenedores a partir de ellas
+## Añadir usuario al grupo docker
+```
+sudo  adduser  `id -un`  docker
+```
+
+
+## En el servidor
+__Pasos para crear un registro local e incorporar imágenes__
+
+
+### Creamos directorio para el registro
+```
+mkdir  ~/registro
+```
 
 ### Descargamos contenedor de registro (registry:2)
 
 ```
-docker run -d -p 5000:5000 -v /home/jose/registro/:/var/lib/registry --restart always --name registry registry:2
+docker run -d -p 172.20.7.0:5000:5000 -v /home/`id -un`/registro/:/var/lib/registry --restart always --name registry registry:2
 ```
 
 ### Incorporamos la imagen hello-world a nuestro registro con el nombre hola
@@ -36,9 +53,29 @@ docker rmi ip:5000/hola  # don't worry, no se borrará la imagen que posee el re
 docker run ip:5000/hola
 ```
 
-### Reconfiguración del registro
+### Si necesitamos parar el registro
 ```
 docker stop registry
 docker rm -v registry
-docker run -d -p 192.168.1.129:5000:5000 -v /home/jose/registro/:/var/lib/registry --restart always --name registry registry:2
 ``` 
+
+
+## En el cliente
+__Pasos para descargar imágenes__
+
+
+### Permitir registros inseguros
+```
+nano /etc/docker/daemon.json
+```
+
+Añadir la siguiente línea:
+```
+{ "insecure-registries":["172.20.7.0:5000"] }
+```
+
+### Reiniciar daemon
+
+```
+sudo /etc/init.d/docker restart
+```
