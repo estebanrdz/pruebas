@@ -15,9 +15,7 @@ git config --global push.default  simple
 
 ## Clonado de un repositorio
 
-**
-        git clone git@github.com:jamj2000/pruebas.git
-**
+**`git clone git@github.com:jamj2000/pruebas.git`**
 
 Si hubiese submodulos:
 
