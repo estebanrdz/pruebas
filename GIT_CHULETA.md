@@ -9,13 +9,22 @@
 ```
 git config --global user.email    "jamj2000@gmail.com"
 git config --global user.name     "José Antonio Muñoz Jiménez"
+git config --global core.editor   nano
 git config --global push.default  simple
 ```
 
 ## Clonado de un repositorio
 
+**
 ```
 git clone git@github.com:jamj2000/pruebas.git
+```
+**
+
+Si hubiese submodulos:
+
+```
+git clone --recursive git@github.com:jamj2000/pruebas.git
 ```
 
 ## Listado de Repositorios remotos
