@@ -22,6 +22,8 @@ sudo  apt  install  docker.io
 sudo  adduser  `id -un`  docker
 ```
 
+Cerramos sesión del usuario y volvemos a iniciarla.
+
 
 ## En el servidor
 __Pasos para crear un registro local e incorporar imágenes__
