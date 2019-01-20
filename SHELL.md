@@ -60,6 +60,8 @@ wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Iosevka/R
 
 La instalación puede hacerse desde el GUI, con la herramienta que proporciona nuestro escritorio para el manejo de tipos de letra. 
 
+Es probable que necesitemos reiniciar el terminal/sesión gráfica para detectar la nueva fuente. 
+
 
 **Establecemos la fuente del terminal**
 
@@ -123,7 +125,7 @@ alias sz=". ~/.zshrc"
 **Resultado final**
 
 - **Linux 4.15**
-- **KDE Neon 18.01 (Plasma 5.14.5)**
+- **KDE Neon 18.04 (Plasma 5.14.5)**
 - **Tilix (terminal)**
 
 ![zsh powerlevel9k](zsh-powerlevel9k.png)
