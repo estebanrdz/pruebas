@@ -14,14 +14,7 @@ zsh es un shell compatible con bash, pero que añade varias funcionalidades. Una
 - https://char-map.herokuapp.com/
 - https://github.com/rupa/z
 
-```shell 
-sudo  npm  install --global trash-cli
-```
 
-
-```
-Ctrl+L    # clear , limpiar pantalla
-``` 
 
 ## Instalación
 
@@ -44,9 +37,18 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 chsh  -s  /bin/zsh
 ```
 
-**Instalación Nerd fonts**
 
-Vamos a https://github.com/ryanoasis/nerd-fonts, descargamos la fuente deseada y la instalamos en el sistema. Puede hacerse desde el GUI, con la herramienta que proporciona el DE para manejo de tipos de letra. 
+**Instalación de Nerd Fonts**
+
+Para la configuración correcta de los glifos, no nos vale cualquier tipo de letra. 
+
+Por ello vamos a https://github.com/ryanoasis/nerd-fonts, descargamos la fuente deseada y la instalamos en el sistema. 
+
+```shell
+wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Iosevka/Regular/complete/Iosevka%20Term%20Nerd%20Font%20Complete.ttf
+```
+
+La instalación puede hacerse desde el GUI, con la herramienta que proporciona el DE para manejo de tipos de letra. 
 
 
 
@@ -57,21 +59,73 @@ Vamos a https://github.com/ryanoasis/nerd-fonts, descargamos la fuente deseada y
 git  clone  https://github.com/bhilburn/powerlevel9k.git   ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
-En `~/.zshrc` debemos establecer las líneas
+**Establecemos la fuente del terminal**
+
+Debemos utilizar la fuente que descargamos e instalamos previamente.
+
+Para ello es necesario modificar las preferencias del terminal que estemos usando.
+
+
+
+**(Opcional) Para usar comando `z` para recorrer directorios**
+
+Permite visitar directorios frecent (frequent/recent)
 
 ```shell
-POWERLEVEL9K_MODE='nerdfont-complete'
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
-source  /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+sudo wget https://raw.githubusercontent.com/rupa/z/master/z.sh  -P  /bin
 ```
 
 
-Reiniciamos la configuración
+**(Opcional) Para usar comando `trash` para eliminar archivos a papelera**
+
+Permite enviar archivos a la papelera. Es un borrado seguro a diferencia del comando `rm`.
+
+```shell 
+sudo  npm  install --global trash-cli
+trash  <nombre_archivo_o_carpeta>
+```
+
+
+**Editamos archivo `~/.zshrc`**
+
+Mi archivo de configuración es:
+
+```shell
+export ZSH="/home/jose/.oh-my-zsh"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+POWERLEVEL9K_MODE="nerdfont-complete"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir dir_writable vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs time battery)
+
+POWERLEVEL9K_DIR_PATH_SEPARATOR=" $(print_icon "LEFT_SUBSEGMENT_SEPARATOR") "
+POWERLEVEL9K_TIME_FORMAT="%D{%d/%m/%y - %H:%M}"
+
+plugins=( git )
+
+source $ZSH/oh-my-zsh.sh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /bin/z.sh
+
+alias ll="ls -l"
+alias la="ls -a"
+alias nz="nano ~/.zshrc"
+alias sz=". ~/.zshrc"
+```
+
+**Reiniciamos la configuración**
 
 ```sh
 .   ~/.zshrc
 ```
+
+**Resultado final**
+
+
+
+
+
 
 ## Fuentes en TTY
 
