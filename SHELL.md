@@ -1,4 +1,6 @@
-# SHELL
+# SHELL (zsh)
+
+zsh es un shell compatible con bash, pero que añade varias funcionalidades. Una de las más interesantes es su **integración con git**. 
 
 ## Referencias
 
@@ -7,11 +9,12 @@
 - https://ohmyz.sh/
 - https://github.com/robbyrussell/oh-my-zsh
 - https://github.com/bhilburn/powerlevel9k
+- https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config
 - https://github.com/ryanoasis/nerd-fonts
 - https://char-map.herokuapp.com/
 - https://github.com/rupa/z
 
-```
+```shell 
 sudo  npm  install --global trash-cli
 ```
 
@@ -20,13 +23,9 @@ sudo  npm  install --global trash-cli
 Ctrl+L    # clear , limpiar pantalla
 ``` 
 
-## Cambiar a zsh
+## Instalación
 
-zsh es un shell compatible con bash, pero que añade varias funcionalidades. Una de las más interesantes es su **integración con git**. 
-
-
-
-**Instalamos shell**
+**Instalamos shell, plugin y tema**
 
 ```shell
 sudo  apt  install  zsh  zsh-syntax-highlighting  zsh-theme-powerlevel9k
@@ -39,34 +38,17 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 ```
 
 
-
-
 **Establecemos zsh como shell por defecto**
 
 ```shell
 chsh  -s  /bin/zsh
 ```
 
-**Instalación de Powerline fonts**
+**Instalación Nerd fonts**
+
+Vamos a https://github.com/ryanoasis/nerd-fonts, descargamos la fuente deseada y la instalamos en el sistema. Puede hacerse desde el GUI, con la herramienta que proporciona el DE para manejo de tipos de letra. 
 
 
-```shell
-mkdir -p .local/share/fonts
-
-wget  https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-wget  https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-
-mv  PowerlineSymbols.otf ~/.local/share/fonts/ 
-mv  10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
-
-fc-cache -vf ~/.local/share/fonts/
-```
-
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
 
 **Instalamos tema Powerlevel9k para Oh My ZSH**
 
@@ -78,7 +60,7 @@ git  clone  https://github.com/bhilburn/powerlevel9k.git   ~/.oh-my-zsh/custom/t
 En `~/.zshrc` debemos establecer las líneas
 
 ```shell
-POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 source  /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -91,50 +73,8 @@ Reiniciamos la configuración
 .   ~/.zshrc
 ```
 
-## Powerline
+## Fuentes en TTY
 
-https://powerline.readthedocs.io/en/latest/installation.html
+Desgraciadamente los terminales tradicionales trabajan con fuentes en formato de bits, no vectoriales como las usadas previamente. 
 
-## Terminales TTY
-
-En los tradicionales TTY las fuentes se configuran de la siguiente forma:
-
-**Comprobamos las fuentes instaladas**
-
-```shell
-ls  /usr/share/consolefonts
-```
-
-**Instalamos `awesome-terminal-fonts`**
-
-```shell
-# git clone https://github.com/gabrielelana/awesome-terminal-fonts.git
-
-# cd awesome-terminal-fonts
-
-# cp  build/*  ~/.local/share/fonts
-# fc-cache  -vf  ~/.local/share/fonts
-# cp  config/10-symbols.conf  ~/.config/fontconfig/conf.d
-```
-
-En `.zshrc` escribir
-
-```shell
-source  ~/.local/share/fonts/*.sh
-```
-
-
-**Editamos el archivo `/etc/default/console-setup`**
-
-Por ejemplo:
-
-```
-ACTIVE_CONSOLES="/dev/tty[1-6]"
-CHARMAP="UTF-8"
-CODESET="guess"
-FONTFACE="UbuntuMono-R"
-FONTSIZE="16x8"
-# SCREEN_WIDTH="80"
-```
-
-> Nota: Si la fuente a poner es `UbuntuMono-R-8x16.psf` debemos escribir FONTSIZE="16x8" (al revés)
+Por lo tanto no es posible aplicar a las TTYs los temas que usan fuentes TTF. 
