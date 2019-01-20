@@ -21,8 +21,11 @@ zsh es un shell compatible con bash, pero que añade varias funcionalidades. Una
 **Instalamos shell y plugin**
 
 ```shell
-sudo  apt  install  zsh  zsh-syntax-highlighting
+sudo  apt  install  zsh  zsh-syntax-highlighting  neofetch
 ```
+
+> `neofetch` es un comado que nos sirve para mostrar información del sistema al iniciar el terminal.
+
 
 **Descargamos y ejecutamos script de configuración automática (Oh My ZSH)** 
 
@@ -101,7 +104,7 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs time battery)
 
-POWERLEVEL9K_DIR_PATH_SEPARATOR=" $(print_icon "LEFT_SUBSEGMENT_SEPARATOR") "
+POWERLEVEL9K_DIR_PATH_SEPARATOR=$'\uE0B1'
 POWERLEVEL9K_TIME_FORMAT="%D{%d/%m/%y - %H:%M}"
 
 plugins=( git )
@@ -109,6 +112,8 @@ plugins=( git )
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /bin/z.sh
+
+neofetch
 
 alias ll="ls -l"
 alias la="ls -a"
