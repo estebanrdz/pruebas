@@ -123,7 +123,7 @@ alias sz=". ~/.zshrc"
 **Resultado final**
 
 - **Linux 4.15**
-- **KDE Neon 18.01 (Plasma 4.15.4)**
+- **KDE Neon 18.01 (Plasma 5.14.5)**
 - **Tilix (terminal)**
 
 ![zsh powerlevel9k](zsh-powerlevel9k.png)
