@@ -18,10 +18,10 @@ zsh es un shell compatible con bash, pero que añade varias funcionalidades. Una
 
 ## Instalación
 
-**Instalamos shell, plugin y tema**
+**Instalamos shell y plugin**
 
 ```shell
-sudo  apt  install  zsh  zsh-syntax-highlighting  zsh-theme-powerlevel9k
+sudo  apt  install  zsh  zsh-syntax-highlighting
 ```
 
 **Descargamos y ejecutamos script de configuración automática (Oh My ZSH)** 
@@ -38,20 +38,6 @@ chsh  -s  /bin/zsh
 ```
 
 
-**Instalación de Nerd Fonts**
-
-Para la configuración correcta de los glifos, no nos vale cualquier tipo de letra. 
-
-Por ello vamos a https://github.com/ryanoasis/nerd-fonts, descargamos la fuente deseada y la instalamos en el sistema. 
-
-```shell
-wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Iosevka/Regular/complete/Iosevka%20Term%20Nerd%20Font%20Complete.ttf
-```
-
-La instalación puede hacerse desde el GUI, con la herramienta que proporciona el DE para manejo de tipos de letra. 
-
-
-
 **Instalamos tema Powerlevel9k para Oh My ZSH**
 
 ```shell
@@ -59,12 +45,27 @@ La instalación puede hacerse desde el GUI, con la herramienta que proporciona e
 git  clone  https://github.com/bhilburn/powerlevel9k.git   ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
+
+**Instalación de Nerd Fonts**
+
+Para la configuración correcta de los glifos, no nos vale cualquier tipo de letra. 
+
+Por ello vamos a https://github.com/ryanoasis/nerd-fonts, descargamos la fuente deseada y la instalamos en el sistema. 
+
+Yo he descargado `Iosevka Term Nerd`.
+
+```shell
+wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Iosevka/Regular/complete/Iosevka%20Term%20Nerd%20Font%20Complete.ttf
+```
+
+La instalación puede hacerse desde el GUI, con la herramienta que proporciona nuestro escritorio para el manejo de tipos de letra. 
+
+
 **Establecemos la fuente del terminal**
 
 Debemos utilizar la fuente que descargamos e instalamos previamente.
 
 Para ello es necesario modificar las preferencias del terminal que estemos usando.
-
 
 
 **(Opcional) Para usar comando `z` para recorrer directorios**
@@ -74,7 +75,6 @@ Permite visitar directorios frecent (frequent/recent)
 ```shell
 sudo wget https://raw.githubusercontent.com/rupa/z/master/z.sh  -P  /bin
 ```
-
 
 **(Opcional) Para usar comando `trash` para eliminar archivos a papelera**
 
@@ -122,8 +122,11 @@ alias sz=". ~/.zshrc"
 
 **Resultado final**
 
+- **Linux 4.15**
+- **KDE Neon 18.01 (Plasma 4.15.4)**
+- **Tilix (terminal)**
 
-
+![zsh powerlevel9k](zsh-powerlevel9k.png)
 
 
 
