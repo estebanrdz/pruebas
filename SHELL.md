@@ -104,7 +104,7 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs time battery)
 
-POWERLEVEL9K_DIR_PATH_SEPARATOR=$'\uE0B1'
+POWERLEVEL9K_DIR_PATH_SEPARATOR=$' \uE0B1 '
 POWERLEVEL9K_TIME_FORMAT="%D{%d/%m/%y - %H:%M}"
 
 plugins=( git )
