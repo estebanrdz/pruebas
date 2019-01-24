@@ -55,10 +55,10 @@ Para la configuración correcta de los glifos, no nos vale cualquier tipo de let
 
 Por ello vamos a https://github.com/ryanoasis/nerd-fonts, descargamos la fuente deseada y la instalamos en el sistema. 
 
-Yo he descargado `Iosevka Term Nerd`.
+Yo he descargado `Hack Nerd Font`.
 
 ```shell
-wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Iosevka/Regular/complete/Iosevka%20Term%20Nerd%20Font%20Complete.ttf
+wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 ```
 
 La instalación puede hacerse desde el GUI, con la herramienta que proporciona nuestro escritorio para el manejo de tipos de letra. 
@@ -107,6 +107,12 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs time battery)
 POWERLEVEL9K_DIR_PATH_SEPARATOR=$' \uE0B1 '
 POWERLEVEL9K_TIME_FORMAT="%D{%d/%m/%y - %H:%M}"
 
+# Prompt settings
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%K{white}%k"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{green}%F{black} \uf554 %f%F{green}%k\ue0b0%f "
 plugins=( git )
 
 source $ZSH/oh-my-zsh.sh
