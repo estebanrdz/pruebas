@@ -5,7 +5,6 @@ zsh es un shell compatible con bash, pero que añade varias funcionalidades. Una
 ## Referencias
 
 - https://youtu.be/wM1uNqj71Ko
-
 - https://ohmyz.sh/
 - https://github.com/robbyrussell/oh-my-zsh
 - https://github.com/bhilburn/powerlevel9k
@@ -113,6 +112,7 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%K{white}%k"
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{green}%F{black} \uf554 %f%F{green}%k\ue0b0%f "
+
 plugins=( git )
 
 source $ZSH/oh-my-zsh.sh
