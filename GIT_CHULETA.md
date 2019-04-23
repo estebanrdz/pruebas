@@ -9,6 +9,7 @@
 ```
 git config  --global user.email    "jamj2000@gmail.com"
 git config  --global user.name     "José Antonio Muñoz Jiménez"
+git config  --global core.pager    cat
 git config  --global core.editor   nano
 git config  --global core.editor   "code --wait"
 git config  --global push.default  simple
