@@ -7,21 +7,21 @@
 ## Configuración mínima
 
 ```
-git config --global user.email    "jamj2000@gmail.com"
-git config --global user.name     "José Antonio Muñoz Jiménez"
-git config --global core.editor   nano
-git config --global core.editor   "code --wait"
-git config --global push.default  simple
+git config  --global user.email    "jamj2000@gmail.com"
+git config  --global user.name     "José Antonio Muñoz Jiménez"
+git config  --global core.editor   nano
+git config  --global core.editor   "code --wait"
+git config  --global push.default  simple
 ```
 
 ## Clonado de un repositorio
 
-**`git clone git@github.com:jamj2000/pruebas.git`**
+**`git clone  git@github.com:jamj2000/pruebas.git`**
 
 Si hubiese submodulos:
 
 ```
-git clone --recursive git@github.com:jamj2000/pruebas.git
+git clone  --recursive git@github.com:jamj2000/pruebas.git
 ```
 
 ## Listado de Repositorios remotos
@@ -29,7 +29,7 @@ git clone --recursive git@github.com:jamj2000/pruebas.git
 Para mostrar repositorios remotos asociados a repositorio local.
 
 ```
-git remote -v
+git remote  -v
 ```
 
 ## Actualización de submódulos
@@ -37,7 +37,7 @@ git remote -v
 Para actualizar submódulos de terceros.
 
 ```
-git submodule update --init --recursive
+git submodule update  --init --recursive
 ```
 
 ## Listado de Ramas
@@ -45,31 +45,44 @@ git submodule update --init --recursive
 Para ver todas las ramas, tanto locales como remotas.
 
 ```
-git branch -av
+git branch  -av
 ```
 
 ## Listado de Commits
 
-**Todos los commits**
+**Todos los commits en todas las ramas**
 
 Modo detallado:
 
 ```
-git log --graph
+git log  --graph --all
 ```
 
 Modo simplificado:
 
 ```
-git log --graph --oneline
+git log  --graph --all --oneline
 ```
+
+## Subida de commits de todas las ramas
+
+```
+git push origin --all
+```
+
+## Bajada de commits de todas las ramas
+
+```
+git pull origin --all
+```
+
 
 ## Cambio de rama
 
 Para cambiar de una rama a otra.
 
 ```
-git checkout _nombre-rama_
+git checkout  _nombre-rama_
 ```
 
 ## Cambio de commit
@@ -77,48 +90,50 @@ git checkout _nombre-rama_
 Para cambiar de un commit a otro dentro de la misma rama.
 
 ```
-git checkout _hash_
+git checkout  _hash_
 ```
 
-Para volver al HEAD de la rama
+Para volver al último commit de la rama
 
 ```
-git checkout _nombre-rama_
+git checkout  _nombre-rama_
 ```
 
 ## Deshacer cambios realizados antes del commit
 
 ```
-git checkout -- .
+git checkout  -- .
 ```
 
 ## Crear rama local y saltar a ella
 
 ```
-git checkout -b _nombre-rama_
+git checkout  -b _nombre-rama_
 ```
 
 ## Crear rama remota y subir cambios de rama local
 
 ```
-git push --set-upstream origin _nueva-rama_
+git push  --set-upstream  origin  _nueva-rama_
+git push  -u  origin  _nueva-rama_
 ```
 
 ## Borrar rama local
 
 ```
-git branch -d _nombre-rama_
+git branch  -d _nombre-rama_
 ```
 
 ## Borrar rama remota
 
 ```
-git push origin --delete _nombre-rama_
+git push  origin --delete _nombre-rama_
+git push  origin -D _nombre-rama_
 ```
 
-## Listado de Etiquetas
+## Trabajo con Etiquetas
 
-**Todas las etiquetas.**
+**Listar todas las etiquetas.**
 
 Modo detallado \(4 líneas\):
 
@@ -131,6 +146,32 @@ Modo simplificado:
 ```
 git tag
 ```
+
+**Crear etiqueta de tipo anotación.**
+
+```
+git tag -a v1.0 -m "Versión 1.0"  _hash_
+```
+
+**Eliminar etiqueta**
+
+```
+git tag -d v1.0 
+```
+
+**Subir todos los tags de todas las ramas**
+
+```
+git push  origin --tags
+```
+
+**Bajar todos los tags de todas las ramas**
+
+```
+git pull  origin --tags 
+```
+
+
 
 ## Recursos
 
