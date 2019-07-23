@@ -15,6 +15,7 @@ Un registro es un servidor donde se almacenan imágenes de docker. Un registro p
 ## Instalar docker en Ubuntu
 ```
 sudo  apt  install  docker.io
+Despapaye en otras líneas
 ```
 
 ## Añadir usuario al grupo docker

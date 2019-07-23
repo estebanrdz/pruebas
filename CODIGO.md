@@ -15,6 +15,11 @@ ay me volví a equivocar
 
 
 prueba commit 1
+<<<<<<< HEAD
 Prueba commit 2
 despapaye
 como se mira un merge
+=======
+Despapaye x2
+como se mira un merge
+>>>>>>> Esteban-rama2
