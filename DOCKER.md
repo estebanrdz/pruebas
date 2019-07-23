@@ -20,6 +20,7 @@ sudo  apt  install  docker.io
 ## Añadir usuario al grupo docker
 ```
 sudo  adduser  `id -un`  docker
+Más despapaye en otras líneas
 ```
 
 Cerramos sesión del usuario y volvemos a iniciarla.
