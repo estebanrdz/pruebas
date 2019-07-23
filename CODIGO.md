@@ -17,3 +17,4 @@ ay me volví a equivocar
 prueba commit 1
 Prueba commit 2
 Commit 3
+como se mira un merge

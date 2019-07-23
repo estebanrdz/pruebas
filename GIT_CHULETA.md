@@ -15,6 +15,7 @@ git config --global push.default  simple
 
 ```
 este fue un comentario para probar mis cambios
+aber esos merge
 ```
 
 ## Clonado de un repositorio
