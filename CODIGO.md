@@ -10,6 +10,6 @@
 [import:1-, title:"Snippet codigo Javascript", lang:"javascript"](app.js)
 
 
-
+ay me volví a equivocar
 
 
