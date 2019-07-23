@@ -14,4 +14,3 @@ Una línea añadida debajo del código.
 ay me volví a equivocar
 
 
-prueba de commit 1
