@@ -13,6 +13,10 @@ git config --global core.editor   nano
 git config --global push.default  simple
 ```
 
+```
+este fue un comentario para probar mis cambios
+```
+
 ## Clonado de un repositorio
 
 ```
