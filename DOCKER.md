@@ -7,7 +7,9 @@
 - [Construir un entorno de integración continua con TravisCI](https://medium.com/google-developers/how-to-run-travisci-locally-on-docker-822fc6b2db2e)
 - [Construir un entorno de integración continua con Jenkins y SonarQube](https://yeiei.net/es/como-construir-un-entorno-de-integracion-continua-con-jenkins-y-docker/)
 
-
+```
+Comentario
+```
 # COMO CREAR UN REGISTRO PRIVADO
 
 Un registro es un servidor donde se almacenan imágenes de docker. Un registro privado puede montarse en una red local para ahorrar ancho de banda en las descargas desde Internet.
